@@ -31,6 +31,6 @@ app.get("/user/:id", (req, res)=> {
     }
 )
   
-app.listen(SERVER_PORT, () => {
+app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
 })
