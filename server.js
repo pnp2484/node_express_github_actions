@@ -30,6 +30,12 @@ app.get("/user/:id", (req, res)=> {
       res.send(`User ID: ${req.params.id}`);
     }
 )
+
+//http://localhost:3000/valueofday/1980-01-24
+app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
+  console.log(req.params)
+  res.send(req.params)
+});
   
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
