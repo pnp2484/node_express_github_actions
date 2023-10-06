@@ -7,11 +7,12 @@ const SERVER_HOST = "localhost"
 
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+app.use(express.static('views')) // serve static files from views folder
 
 
 //http://localhost:3000/
-app.get('/', function (req, res) {
-    res.send("<h1>Home Page</h1>")
+app.get('/', (req,res) => {
+  res.sendFile('./views/index.html')
 })
 
 //http://localhost:3000/name
