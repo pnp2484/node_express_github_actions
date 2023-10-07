@@ -19,6 +19,20 @@ app.get('/name', (req, res) => {
   res.send('<h1>C0879812 -Subodh Shah')
 })
 
+//http://localhost:3000/test
+app.get('/test', (req, res) => {
+  fs.readFile('index.html', 'utf8', (err, data) => {
+    if (err) {
+        console.error('Error reading index.html:', err);
+        res.status(500).send('Internal Server Error');
+        return;
+    }
+
+    // Send the HTML content as the response
+    res.send(data);
+});
+})
+
 
 //http://localhost:3000/profile
 app.post('/profile', (req, res) => {
