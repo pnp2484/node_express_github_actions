@@ -9,17 +9,17 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 
-//http://localhost:3000/
+//http://localhost:3000/home
 app.get('/', function (req, res) {
     res.send("<h1>Home Page</h1>")
 })
 
 //http://localhost:3000/name
 app.get('/name', (req, res) => {
-  res.send('<h1>C0879812 -Subodh Shah')
+  res.send('<h1>C0879812 -Subodh Shah</h1>')
 })
 
-//http://localhost:3000/test
+//http://localhost:3000/
 app.get('/test', (req, res) => {
   fs.readFile('index.html', 'utf8', (err, data) => {
     if (err) {
