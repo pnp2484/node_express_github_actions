@@ -8,7 +8,7 @@ body, h1, a {
 body {
     background-color: #f0f0f0;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 /* Styling for the main heading */
@@ -37,7 +37,7 @@ nav a:hover {
 #profile-form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
