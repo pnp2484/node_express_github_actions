@@ -25,6 +25,11 @@ app.post('/name', (req, res) => {
   res.send("<h1>C0868053 - Jay Shah</h1>")
 })
 
+//http://localhost:3000/name
+app.get('/name', (req, res) => {
+  res.send("<h1>C0868053 - Jay Shah</h1>")
+})
+
 //http://localhost:3000/admin
 app.get('/admin', (req, res) => {
   res.send('Admin Homepage')
