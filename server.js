@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 app.use(express.static("views"))
 
 //http://localhost:3000/
-app.get('/', function (req, res) {
+app.get('/jay', function (req, res) {
     res.send("./views/index.html")
 })
 
