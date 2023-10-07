@@ -1,7 +1,7 @@
 var express = require('express')
 
 var app = express()
-
+const fs = require('fs');
 const SERVER_PORT = 3000
 const SERVER_HOST = "localhost"
 
@@ -21,7 +21,7 @@ app.get('/name', (req, res) => {
 
 //http://localhost:3000/test
 app.get('/test', (req, res) => {
-  app.readFile('index.html', 'utf8', (err, data) => {
+  fs.readFile('index.html', 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading index.html:', err);
         res.status(500).send('Internal Server Error');
