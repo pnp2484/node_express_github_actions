@@ -1,0 +1,61 @@
+/* Reset some default browser styles for consistency */
+body, h1, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 24px;
+    color: #510505;
+    margin-bottom: 20px;
+}
+
+/* Styling for the links */
+nav a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 18px;
+    color: #007bff; /* Blue color for links, you can change this */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for links */
+nav a:hover {
+    color: #0056b3; /* Darker blue color on hover, you can change this */
+}
+
+/* Style the profile form */
+#profile-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

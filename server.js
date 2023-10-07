@@ -20,6 +20,11 @@ app.post('/profile', (req, res) => {
   res.json(req.body)
 })
 
+//http://localhost:3000/name
+app.post('/name', (req, res) => {
+  res.send("<h1>C0868053 - Jay Shah</h1>")
+})
+
 //http://localhost:3000/admin
 app.get('/admin', (req, res) => {
   res.send('Admin Homepage')

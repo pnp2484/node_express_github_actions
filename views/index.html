@@ -4,72 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jay Shah</title>
-
-    <style>
-
-        /* Reset some default browser styles for consistency */
-        body, h1, a {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Basic styling for the body */
-        body {
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Styling for the main heading */
-        h1 {
-            font-size: 36px;
-            color: #510505;
-            margin-bottom: 20px;
-        }
-
-        /* Styling for the links */
-        a {
-            display: block;
-            font-size: 18px;
-            color: #007bff; /* Blue color for links, you can change this */
-            text-decoration: none;
-            margin: 10px 0;
-        }
-
-        /* Hover effect for links */
-        a:hover {
-            color: #0056b3; /* Darker blue color on hover, you can change this */
-        }
-
-        /* Optional: Center the links horizontally */
-        a {
-            margin: 10px auto;
-            width: fit-content;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
     
-    <h1>C0868053 Jay Shah</h1>
-     
-    <div>
-        <a href="">Profile</a><br>
+    <header>
+        <h1>C0868053 Jay Shah</h1>
+    </header>
+
+    <nav>
+        <a href="/profile">Profile</a>
+        <a href="/name">Name</a>
+        <a href="/admin">Admin Homepage</a>
+        <a href="/user/100">User ID</a>
+    </nav>
+
+    <section id="profile-form">
+        <h2>Update Profile</h2>
         <form action="/profile" method="post">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required>
-            <br><br>
-            <label for="number">Number:</label>
-            <input type="text" name="number" id="number" required>
-            <br><br>
-            <input type="submit" id="submit" value="Go to profile page">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="text" name="number" id="number" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" id="submit" value="Go to profile page">
+            </div>
         </form>
-    </div>
-    
-    <a href="/admin">Admin Homepage</a><br>
-    <a href="/user/100">User ID</a><br>
+    </section>
 
 
   
