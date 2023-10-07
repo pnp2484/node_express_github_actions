@@ -55,7 +55,19 @@
     
     <h1>C0868053 Jay Shah</h1>
      
-    <a href="/profile">Profile</a><br>
+    <div>
+        <a href="">Profile</a><br>
+        <form action="/profile" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="number">Number:</label>
+            <input type="text" name="number" id="number" required>
+            <br><br>
+            <input type="submit" id="submit" value="Go to profile page">
+        </form>
+    </div>
+    
     <a href="/admin">Admin Homepage</a><br>
     <a href="/user/100">User ID</a><br>
 
