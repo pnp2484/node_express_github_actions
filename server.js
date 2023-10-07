@@ -21,7 +21,7 @@ app.get('/name', (req, res) => {
 
 //http://localhost:3000/test
 app.get('/test', (req, res) => {
-  fs.readFile('index.html', 'utf8', (err, data) => {
+  app.readFile('index.html', 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading index.html:', err);
         res.status(500).send('Internal Server Error');
