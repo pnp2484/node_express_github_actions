@@ -41,7 +41,10 @@ app.get("/valueofday/:year(\\d{4})-:month(\\d{2})-:day(\\d{2})", (req, res) => {
 app.listen(process.env.PORT  || SERVER_PORT, () => {
     console.log(`Server running at http://${SERVER_HOST}:${SERVER_PORT}/`);
 })
-
 app.get("/name", (req, res) =>{
     res.send("<h1>C0864995 - Fatima Nisha");
+});
+
+app.get("/user", (req, res) =>{
+  res.send("<h1>Student Profile");
 });
