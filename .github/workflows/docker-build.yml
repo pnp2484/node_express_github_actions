@@ -22,9 +22,9 @@ jobs:
         run: npm install
 
       - name: Build Docker Image
-        run: docker build -t your-docker-image-name .
+        run: docker build -t act-three-image .
 
       - name: Push Docker Image
         run: |
-          docker tag your-docker-image-name:latest docker.pkg.github.com/${{ github.repository }}/your-docker-image-name:latest
-          docker push docker.pkg.github.com/${{ github.repository }}/your-docker-image-name:latest
+          docker tag act-three-image:latest docker.pkg.github.com/${{ github.repository }}/act-three-image:latest
+          docker push docker.pkg.github.com/${{ github.repository }}/act-three-image:latest
