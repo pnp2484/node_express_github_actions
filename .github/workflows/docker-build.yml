@@ -22,10 +22,10 @@ jobs:
         run: npm install
 
       - name: Build Docker Image
-        run: docker build -t docker.pkg.github.com/${{ github.repository }}/act-image:latest .
+        run: docker build -t docker.pkg.github.com/subodhshah-1/node_express_github_actions/act-image:latest .
 
       - name: Log in to GitHub Container Registry
         run: echo "${{ secrets.CR_PAT }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
 
       - name: Push Docker Image
-        run: docker push docker.pkg.github.com/${{ github.repository }}/act-image:latest
+        run: docker push docker.pkg.github.com/subodhshah-1/node_express_github_actions/act-image:latest
