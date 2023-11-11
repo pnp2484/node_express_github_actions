@@ -11,7 +11,12 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 //http://localhost:3000/
 app.get('/', function (req, res) {
-    res.send("<h1>Home Page</h1>")
+    res.send("<h1>Home Page. This is Docker App</h1>")
+})
+
+//http://localhost:3000/name
+app.get('/name', function (req, res) {
+  res.send("<h1>C0865912 - Gargi Patel</h1>")
 })
 
 //http://localhost:3000/profile
