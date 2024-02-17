@@ -16,7 +16,7 @@ app.get('/', function (req, res) {
 
 //http://localhost:3000/name
 app.get('/name', function (req, res) {
-  res.send("<h1>c0866930 - Jaideep singh</h1>")
+  res.send("<h1>c0866930 - JaideepSingh</h1>")
 })
 
 //http://localhost:3000/profile
